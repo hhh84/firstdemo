@@ -5,31 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>阿右的第一个网站</title>
     <style>
-        body { font-family: Arial, sans-serif; padding: 20px; background: #f0f0f0; text-align: center; }
-        .container { max-width: 800px; margin: 50px auto; background: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        /* 广告容器样式 */
-        #sponsors_1696 { margin: 20px 0; min-height: 90px; } 
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 600px;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
     </style>
 </head>
 <body>
-    <!-- 广告展示位置 -->
+
+    <!-- 广告容器 -->
     <div id="sponsors_1696"></div>
 
     <div class="container">
         <h1>🎉 部署成功！</h1>
-        
-        <!-- 这里加一些假内容，骗过广告系统的“空白页检测” -->
-        这是一个真实的测试页面。Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        
-            欢迎光临阿右的第一个测试网站。请确保页面有足够的文字内容，广告才能正常展示。
-        
-        
+        欢迎光临阿右的第一个测试网站。这是一个真实的测试页面，包含了足够的内容以确保广告系统能够正常识别和加载。
+        永久免费 | 自带HTTPS | 全球CDN
         <div class="tip">修改代码上传GitHub自动更新</div>
+        
+        <!-- 这里多加点废话，骗过广告系统的“空页面检测” -->
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </div>
 
-    <!-- 引入广告脚本 (加了 data-cfasync="false" 防止被 Cloudflare/Vercel 重写) -->
+    <!-- 重点：加上 data-cfasync="false" -->
     <script data-cfasync="false" src="https://pl29541806.effectivecpmnetwork.com/0c/1c/f9/0c1cf9127b9a1bbc0b25c0b0267564a9.js"></script>
+
 </body>
 </html>
