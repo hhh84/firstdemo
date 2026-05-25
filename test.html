@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Adsterra 直连测试</title>
+</head>
+<body>
+  <h1>直接访问广告 JS</h1>
+
+  <script>
+    fetch("https://pl29541806.effectivecpmnetwork.com/0c/1c/f9/0c1cf9127b9a1bbc0b25c0b0267564a9.js")
+      .then(r => {
+        alert("状态码：" + r.status);
+      })
+      .catch(e => {
+        alert("失败：" + e);
+      });
+  </script>
+</body>
+</html>
